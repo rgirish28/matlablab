@@ -1,0 +1,14 @@
+load patients;
+
+[rest, restlabels, input, inputlabels] = crossfold(1,4,inputs,labels); 
+
+for i=1:494
+    c = mi(input(:,i),inputlabels);
+    absolute(1,i) = abs(c);
+end
+
+[values,index]=sort(absolute, 'descend');
+
+disp(['The features which are most important are: ' num2str(index(1:5))]);
+
+bar(index(1:5), values(1:5));

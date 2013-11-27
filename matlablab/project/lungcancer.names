@@ -1,0 +1,8 @@
+1. Title: Lung Cancer Dataset
+   Problem: Adeno / Squamous cancer diagnosis.
+
+2. Number of Instances: 76
+
+3. Number of Features: 325
+
+4. Task: predict adenocarcinoma (1) versus squamous cancer (2).

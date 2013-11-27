@@ -1,0 +1,8 @@
+load patients;
+
+p = 494;
+m = 20;
+
+W = zeros(1,494);
+
+
